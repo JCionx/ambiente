@@ -19,6 +19,10 @@
         font-size: 1.5rem;
     }
 
+    main {
+        background: rgb(79,255,252);
+    }
+
     .sky {
         border: 0px;
     }
@@ -31,29 +35,20 @@
 
     .earth {
         background: rgb(79,255,252);
-        background: linear-gradient(190deg, rgba(79,255,252,1) 0%, rgba(62,62,62,1) 100%);
+        background: linear-gradient(180deg, rgba(79,255,252,1) 0%, rgba(75,209,206,1) 41%, rgba(62,62,62,1) 100%);
     }
 
     .earth img {
         width: 100vw;
+        animation: planet_rotate 10s linear 0s infinite normal forwards;
     }
 
-
-
-    .water {
-        width: 100vw;
-        height: 100px;
-        overflow: hidden;
-        background-image: url('images/water.png');
-        background-repeat: repeat-x;
-        animation: scroll 10s linear infinite;
-    }
-
-    @keyframes scroll {
+    @keyframes planet_rotate {
         0% {
-        transform: translateX(0);
+            transform: rotate(0);
         }
+    
         100% {
-        transform: translateX(0);
+            transform: rotate(360deg);
         }
     }
