@@ -1,0 +1,59 @@
+    body {
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    header {
+        text-align: center;
+        color: black;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    .sky {
+        border: 0px;
+    }
+
+    .sky img {
+        width: 100vw;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .earth {
+        background: rgb(79,255,252);
+        background: linear-gradient(190deg, rgba(79,255,252,1) 0%, rgba(62,62,62,1) 100%);
+    }
+
+    .earth img {
+        width: 100vw;
+    }
+
+
+
+    .water {
+        width: 100vw;
+        height: 100px;
+        overflow: hidden;
+        background-image: url('images/water.png');
+        background-repeat: repeat-x;
+        animation: scroll 10s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+        transform: translateX(0);
+        }
+        100% {
+        transform: translateX(0);
+        }
+    }
