@@ -52,6 +52,20 @@ function removeGlass() {
     }, 100);
 }
 
+function share() {
+    if (navigator.share) {
+        navigator.share({
+          title: 'O nosso Planeta',
+          text: 'Descobre como podes ajudar o nosso planeta!',
+          url: window.location.href,
+        })
+          .then(() => console.log('Successful share'))
+          .catch((error) => console.log('Error sharing', error));
+    }
+};
+  
+
+
 document.getElementById("bulb_off").style.display = "none";
 function bulb() {
     document.getElementById("bulb_off").style.display = "block";

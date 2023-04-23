@@ -142,3 +142,20 @@
     .bulb p {
         font-size: large;
     }
+
+    footer {
+        text-align: center;
+        font-size: large;
+        background-color: rgb(165, 200, 243);
+        padding: 20px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    .share {
+        margin: 10px;
+        width: 48px;
+        cursor: pointer;
+    }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <title>O nosso Planeta</title>
 </head>
 <body>
-    <iframe src="" id="desktopView" frameborder="0" style="display: none;"></iframe>
+    <iframe allow="web-share" src="" id="desktopView" frameborder="0" style="display: none;"></iframe>
     <header>
         <h1>O nosso Planeta</h1>
         <p>Trabalho realizado por João Botelho Nº8</p>
@@ -22,11 +22,11 @@
             <img src="images/sky.png" alt="Um céu com nuvens">
         </div>
         <div class="earth">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, commodi.</p>
+            <h2>Os cuidados que devemos ter com o nosso Planeta</p>
             <img src="images/planet.png" alt="Um planeta com árvores">
         </div>
         <div class="earthText">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sequi minima. Quibusdam, odio? Earum tenetur similique, aperiam non iste magnam at voluptates architecto voluptatum, necessitatibus aspernatur molestiae dolor quaerat neque dolores cumque, fuga modi accusamus beatae! Minima ab sint expedita quisquam provident, numquam illum aliquid deleniti iste earum velit veritatis maxime nostrum officiis aspernatur autem exercitationem quasi blanditiis magnam. Doloribus, sit. Inventore itaque dolore debitis laudantium eum perspiciatis eligendi reprehenderit quibusdam ab sed! Facilis minus voluptate quis fuga tenetur hic assumenda corrupti impedit, delectus veritatis mollitia illo eius dolor eum, placeat dolores temporibus quibusdam voluptates. Consequuntur dolorem tenetur commodi eveniet?</p>
+            <p>A Terra é o local onde nós vivemos. Também é o local onde os nossos antepassados viveram. E também é o local onde os nossos descencendes viverão. Mas será que estamos a desfrutar do planeta como os nossos antepassados? E será que os nossos descencendes irão apreciar o planeta como apreciamos hoje?<br><br>Devemos cuidar do nosso planeta, e mante-lo limpo, tal como a nossa casa. Neste <span>website</span>, vais ver 3 simples passos que tu podes realizar, que vão ajudar o planeta.<br><br>1. Não sujes o planeta.<br><br>Não deites lixo para o chão nem para os mares, rios ou lagos. Os caixotes do lixo, ou contentores, servem para guardar o lixo até ser recolhido. Experimenta não deitar lixo no chão, mares, rios ou lagos durante uma semana, e depois reflete se foi assim tanto o esforço. Quando fazemos isso, evitamos que a natureza se suje, e mantemos o nosso planeta limpo para as próximas gerações.<br>Também podes recolher lixo das ruas ou mares e colocá-lo num contentor.<br>(Toca nas garrafas abaixo para as remover do mar)</p>
         </div>
         <div class="bottles">
             <img src="images/bottle.png" id="plastic" onclick="removePlastic()" alt="Garrafa de plástico">
@@ -37,20 +37,23 @@
                 <img src="images/water.png" alt="O oceano">
             </div>
             <div class="waterText">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quasi possimus optio officia reiciendis, voluptas molestiae totam doloremque dolorem laudantium, esse fugit alias! Aliquid tempora minus in ipsum voluptas? Error autem quis nobis ipsam at dignissimos vel aliquid, assumenda quos, corporis quidem, quibusdam suscipit tempore dolore. Maxime, ullam fugit id magnam voluptate animi laborum sint esse. Nulla dignissimos similique ipsa expedita hic a culpa iusto commodi. Deserunt sequi quia aliquid atque adipisci similique porro velit laboriosam soluta expedita obcaecati odit unde deleniti sapiente iure, quod ratione veniam doloribus eaque facilis natus! Voluptate minus accusantium possimus minima assumenda, placeat culpa alias?</p>
+                <p>2. Recicla<br><br>Na tua cidade, existem diversos locais onde encontras os contentores: O verde, para os vidros, o amarelo, para os plásticos, o azul, para os papéis e carões, e o vermelho, para as pilhas e baterias. Esperienta colocar 4 sacos diferentes em tua casa, onde colocas em cada um apenas o lixo de uma das categorias de cada contentor. Depois, regularmente, passa num local onde tenha os contentores, e despeja o lixo nos sítios certos. Quando reciclamos, permitimos que alguns materiais sejam reciclados, e assim não vai ser necessário recolher tanto material do planeta.</p>
             </div>
         </div>
         <div class="waste">
             <img src="images/waste.png" alt="Contentores do lixo">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe praesentium quia voluptates inventore aspernatur sunt possimus et est voluptate, laborum optio pariatur, numquam, obcaecati excepturi! Ipsum sit voluptatem unde non quas error, aspernatur voluptas sint libero suscipit, dignissimos, impedit minus accusantium! Ea rem nesciunt sed ad vitae voluptatem alias maiores.</p>
+            <p>3. Não desprediçes<br><br>Ao longo do dia, todos nós utilizamos energia elétrica e água. Neste momento estás a ler um <span>website</span> num dispositivo que está a consumir energia elétrica. Existe um problema grave com isto. Às vezes, deixamos sem querer uma lâmpada acesa, a televisão ligada, ou até uma torneira a correr. Deves sempre evitar esses gastos desnecessários. Assim, poupamos água limpa e energia para as outras pessoas, e para as gerações futuras.<br>(Clica na lâmpada abaixo para a desligar)</p>
         </div>
         <div class="bulb">
             <img src="images/bulb_on.png" alt="Lâmpada ligada" id="bulb_on" onclick="bulb()">
-            <img src="images/bulb_off.png" alt="Lâmpada desligada" id="bulb_off">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe praesentium quia voluptates inventore aspernatur sunt possimus et est voluptate, laborum optio pariatur, numquam, obcaecati excepturi! Ipsum sit voluptatem unde non quas error, aspernatur voluptas sint libero suscipit, dignissimos, impedit minus accusantium! Ea rem nesciunt sed ad vitae voluptatem alias maiores.</p>
+            <img src="images/bulb_off.png" alt="Lâmpada desligada" id="bulb_off" style="display: none;">
+            <p>Com estes 3 simples passos, consegues cuidar do planeta, e fazer uma diferença.</p>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Compartilha esta página com outros</p>
+        <img src="images/share.png" alt="Partilhar" class="share" onclick="share()">
+    </footer>
     </footer>
     <script src="script.js"></script>
 </body>
