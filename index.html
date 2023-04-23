@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
     <title>O nosso Planeta</title>
 </head>
 <body>
+    <iframe src="" id="desktopView" frameborder="0" style="display: none;"></iframe>
     <header>
         <h1>O nosso Planeta</h1>
         <p>Trabalho realizado por João Botelho Nº8</p>
@@ -21,11 +22,36 @@
             <img src="images/sky.png" alt="Um céu com nuvens">
         </div>
         <div class="earth">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, commodi.</p>
             <img src="images/planet.png" alt="Um planeta com árvores">
         </div>
-        <div class="water"></div>
+        <div class="earthText">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sequi minima. Quibusdam, odio? Earum tenetur similique, aperiam non iste magnam at voluptates architecto voluptatum, necessitatibus aspernatur molestiae dolor quaerat neque dolores cumque, fuga modi accusamus beatae! Minima ab sint expedita quisquam provident, numquam illum aliquid deleniti iste earum velit veritatis maxime nostrum officiis aspernatur autem exercitationem quasi blanditiis magnam. Doloribus, sit. Inventore itaque dolore debitis laudantium eum perspiciatis eligendi reprehenderit quibusdam ab sed! Facilis minus voluptate quis fuga tenetur hic assumenda corrupti impedit, delectus veritatis mollitia illo eius dolor eum, placeat dolores temporibus quibusdam voluptates. Consequuntur dolorem tenetur commodi eveniet?</p>
+        </div>
+        <div class="bottles">
+            <img src="images/bottle.png" id="plastic" onclick="removePlastic()" alt="Garrafa de plástico">
+            <img src="images/wine.png" id="glass" onclick="removeGlass()" alt="Garrava de vidro">
+        </div>
+        <div class="waterElements">
+            <div class="water">
+                <img src="images/water.png" alt="O oceano">
+            </div>
+            <div class="waterText">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quasi possimus optio officia reiciendis, voluptas molestiae totam doloremque dolorem laudantium, esse fugit alias! Aliquid tempora minus in ipsum voluptas? Error autem quis nobis ipsam at dignissimos vel aliquid, assumenda quos, corporis quidem, quibusdam suscipit tempore dolore. Maxime, ullam fugit id magnam voluptate animi laborum sint esse. Nulla dignissimos similique ipsa expedita hic a culpa iusto commodi. Deserunt sequi quia aliquid atque adipisci similique porro velit laboriosam soluta expedita obcaecati odit unde deleniti sapiente iure, quod ratione veniam doloribus eaque facilis natus! Voluptate minus accusantium possimus minima assumenda, placeat culpa alias?</p>
+            </div>
+        </div>
+        <div class="waste">
+            <img src="images/waste.png" alt="Contentores do lixo">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe praesentium quia voluptates inventore aspernatur sunt possimus et est voluptate, laborum optio pariatur, numquam, obcaecati excepturi! Ipsum sit voluptatem unde non quas error, aspernatur voluptas sint libero suscipit, dignissimos, impedit minus accusantium! Ea rem nesciunt sed ad vitae voluptatem alias maiores.</p>
+        </div>
+        <div class="bulb">
+            <img src="images/bulb_on.png" alt="Lâmpada ligada" id="bulb_on" onclick="bulb()">
+            <img src="images/bulb_off.png" alt="Lâmpada desligada" id="bulb_off">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe praesentium quia voluptates inventore aspernatur sunt possimus et est voluptate, laborum optio pariatur, numquam, obcaecati excepturi! Ipsum sit voluptatem unde non quas error, aspernatur voluptas sint libero suscipit, dignissimos, impedit minus accusantium! Ea rem nesciunt sed ad vitae voluptatem alias maiores.</p>
+        </div>
     </main>
     <footer></footer>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

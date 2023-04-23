@@ -12,15 +12,16 @@
     header h1 {
         font-size: 3rem;
         font-weight: 700;
-        margin-top: 15px;
     }
 
     header p {
         font-size: 1.5rem;
+        padding: 10px;
     }
 
     main {
         background: rgb(79,255,252);
+         text-align: center;
     }
 
     .sky {
@@ -43,6 +44,22 @@
         animation: planet_rotate 10s linear 0s infinite normal forwards;
     }
 
+    .earth h2 {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .earthText {
+        background-color: rgba(62,62,62,1);
+    }
+
+    .earthText p {
+        margin: 0;
+        color: white;
+        padding: 10px;
+        font-size: large;
+    }
+
     @keyframes planet_rotate {
         0% {
             transform: rotate(0);
@@ -51,4 +68,77 @@
         100% {
             transform: rotate(360deg);
         }
+    }
+
+    @keyframes ocean {
+        0% {
+            left: -80vw;
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+
+
+    .water img {
+        width: 200vw;
+        position: relative;
+        animation: ocean 3s linear 0s infinite normal forwards;
+        background-color: rgba(62,62,62,1);
+    }
+
+    .bottles {
+        background-color: rgba(62,62,62,1);
+    }
+
+    .bottles img {
+        width: 120px;
+        position: relative;
+        top: 35vw;
+        z-index: 100;
+        margin: 10px;
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+
+    .bottles img:hover {
+        transform: scale(1.1);
+    }
+
+    .waterElements {
+        background-color: #a8bcd4;
+    }
+
+    .waterText p {
+        margin: 0;
+        font-size: large;
+        padding: 20px;
+    }
+
+    .waste p {
+        font-size: large;
+    }
+
+    .waste img {
+        width: 70vw;
+    }
+
+    .waste, .bulb {
+        background-color: #a8bcd4;
+        padding: 20px;
+    }
+
+    .bulb img {
+        width: 80vw;
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+
+    .bulb img:hover {
+        transform: scale(1.1);
+    }
+
+    .bulb p {
+        font-size: large;
     }
